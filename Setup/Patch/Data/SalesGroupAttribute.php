@@ -68,7 +68,7 @@ class SalesGroupAttribute implements DataPatchInterface, PatchRevertableInterfac
             Customer::ENTITY,
             'sales_group',
             [
-                'label' => 'Sales Group',
+                'Sales Group' => 'Sales Group',
                 'input' => 'select',
                 'type' => 'int',
                 'source' => 'Genaker\SalesGroup\Model\SalesGroupOptions',

@@ -7,17 +7,16 @@
 		</constraint>
 		<column name="name" nullable="true" xsi:type="varchar" length="250" comment="Name"/>
 		<column name="sales_group_code" nullable="true" xsi:type="varchar" length="250" comment="Sales group code"/>
-	</table>
-	<!--
-	<table name="customer_entity">
-        <column xsi:type="smallint" name="sales_group_id" padding="5" unsigned="true" nullable="true" identity="false"
-                comment="Sales Group ID"/>
-       </table>
--->
+	</table> 
 	<table name="sales_order">
         	<column xsi:type="smallint" name="sales_group_id" padding="5" unsigned="true" nullable="true" identity="false"
                 	comment="Sales Group ID"/>
        </table>
+	<table name="sales_order">
+        	<column xsi:type="varchar" name="sales_group_name" nullable="true" comment="Sales Group Name"/>
+      </table>
+	<table name="sales_order_grid">
+		<column xsi:type="varchar" name="sales_group_name" nullable="true" comment="Sales Group Name" />
+	</table>
 
-	
 </schema>

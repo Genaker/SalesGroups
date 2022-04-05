@@ -17,4 +17,11 @@
 		</arguments>
 	</type>
 	<preference for="Magento\Sales\Api\OrderRepositoryInterface" type="Genaker\SalesGroup\Model\OrderRepository"/>
+	<virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid" type="Magento\Sales\Model\ResourceModel\Grid">
+		<arguments>
+		<argument name="columns" xsi:type="array">
+			<item name="sales_group_name" xsi:type="string">sales_order.sales_group_name</item>
+		</argument>
+		</arguments>
+	</virtualType>
 </config>
